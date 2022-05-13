@@ -16,9 +16,9 @@
 </head>
 <body class="bg-fixed">
     <header>
-        <nav class="navContainer sticky flex">
-        <div class="nav_icons hideHamburger">
-            <i class="uil uil-bars" id="nav-toggle"></i>
+        <nav class="navContainer flex sticky">
+        <div class="nav_icons hideHamburger flex">
+            <i class="nav__toggle uil uil-bars" id="nav-toggle"></i>
             <i class="uil uil-times nav__close hide" id="nav-close"></i>
         </div>
         <div class="dropdown-lists hideHamburger" id="nav-menu">
@@ -59,12 +59,13 @@
         </nav>
     </header>
     
-
+    <!---============ MAIN SEC ==========-->
     <main class="mainContainer" id="top">
         <h1 class="main-title">Blonde &#38; <br /> Highlight</h1>
-        <a class="ourServicesButton black-arrow-btns" href="#">&#8594; our services</a>
+        <a href="#"><button class="button-59" role="button">&#8594; Our Services</button></a>
+        <!-- <a class="ourServicesButton black-arrow-btns" href="#">&#8594; our services</a> -->
     </main>
-
+    <!---============ IMPRESSED SEC ==========-->
     <section class="beImpressedByOur flex" id="services">
         <section class="impressSection flex">
             <i class="uil uil-graduation-cap impress-icon"></i>
@@ -88,59 +89,77 @@
                 sail and beauty extern interdurm elit moecenas so fauibus mollis expo</p>
         </section>
     </section>
-
+    <!---============ MOMENTUM SEC ==========-->
     <section class="yourOwnMomentum flex" id="about">
-        <section class="momentumTextContain flex">
-            <h3 class="section-titles">Make your <br> own momentum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eius optio quidem recusandae nostrum a dolores praesentium, ex tenetur libero nihil doloremque ipsam? Architecto magnam doloremque recusandae numquam ullam in!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure aut possimus ea tenetur itaque atque fugiat!
-            </p>
-            <a href="#" class="black-arrow-btns momentumBtn">&#8594; Read More</a>
-        </section>
-        <section class="image-container">
-            <img src="/media/IMG_2147.JPG" class="momentumImg" alt="">
-        </section>
+        <div class="momentumBox">
+            <section class="momentumTextContain flex">
+                <h3 class="section-titles">Make your <br> own momentum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eius optio quidem recusandae nostrum a dolores praesentium, ex tenetur libero nihil doloremque ipsam? Architecto magnam doloremque recusandae numquam ullam in!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure aut possimus ea tenetur itaque atque fugiat!
+                </p>
+                <!-- <a href="#" class="black-arrow-btns momentumBtn">&#8594; Read More</a> -->
+                <a href="#"><button class="button-59" role="button">&#8594; Read More</button></a>
+            </section>
+            <section class="image-container">
+                <img src="/media/IMG_2147.JPG" class="momentumImg" alt="">
+            </section>
+        </div>
     </section>
 
     <!---============ CREW SEC ==========-->
 
     <section class="theCrew flex" id="crew">
-        <section class="flex imagesHome">
-            <div class="imageContain flex">
-                <img src="/media/IMG_2106.JPG" class="crew-img" alt="">
-                <div class="namesHome stylists">
-                    <h6>Stylist</h6>
-                    <p>Keita Machida</p>
-                </div>
-            </div>
-            <div class="imageContain flex">
-                <img src="/media/img2.jpeg" class="crew-img image2" alt="">
-                <div class="namesHome stylists">
-                    <h6>Stylist</h6>
-                    <p>Keita Machida</p>
-                </div>
-            </div>
-            <div class="imageContain flex">
-                <img src="/media/IMG_2514.JPG" class="crew-img image3" alt="">
-                <div class="namesHome stylists">
-                    <h6>Stylist</h6>
-                    <p>Keita Machida</p>
-                </div>
-            </div>
-        </section>
+        <div class="cards">
+        <div class="card one"></div>
+        <div class="card two"></div>
+        <div class="card three"></div>
+        <div class="card four"></div>
+        </div>
     </section>
 
     <!---============ LOOKBOOK SEC ==========-->
     <section class="lookbook">
-        <div class="lookbookContainer grid">
-            <img src="" alt="" class="imgOne smallPic">
-            <img src="" alt="" class="imgTwo longPic">
-            <img src="" alt="" class="imgThree smallPic">
-            <img src="" alt="" class="imgFour longPic">
-            <img src="" alt="" class="imgFive smallPic">
-            <img src="" alt="" class="imgSix longPic">
-            
+       
+    </section>
+
+    <!---============ contact SEC ==========-->
+    <section class="contactContainer flex">
+        <h2>Contact Us</h2>
+
+        <div class="contact">
+            <div>
+                
+            </div>
+
+            <form action="#" method="POST" class="contact__form grid">
+                <div class="contact__inputs grid">
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Name</label>
+                        <input type="text" name="name" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Email</label>
+                        <input type="email" name="email" class="contact__input">
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <label for="" class="contact__label">Project</label>
+                    <input type="text" name="project" class="contact__input">
+                </div>
+                <div class="contact__content">
+                    <label for="" class="contact__label">Message</label>
+                    <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+                </div>
+                
+                <div>
+                    <button type="submit" class="button button--flex">
+                        Send Message
+                        <i class="uil uil-message button__icon"></i>
+                    </button>
+                </div>
+            </form>
         </div>
+
     </section>
 
     <!---============ FOOTER SEC ==========-->

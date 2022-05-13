@@ -26,6 +26,7 @@ if(navClose){
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
+const navContainer = document.querySelector('.navContainer')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
@@ -33,5 +34,6 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
     navToggle.classList.remove('hide')
     navClose.classList.add('hide')
+    navContainer.classList.remove('flex')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
