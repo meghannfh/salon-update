@@ -13,16 +13,15 @@ body{
     background-attachment: fixed;
 }
 
-h1, h3, h4{
-
+h1, h3, h4, .stylist, .mobileLogo{
+    font-family: 'Cormorant', serif;
 }
 
 .nav-links li,
 .nav__links li,
 section p,
 .nav-button {
-    font-family: Inter,sans-serif;
-    font-weight: 100;
+    font-family: 'Inter', sans-serif;
 }
 
 .nav-links a{
@@ -46,6 +45,7 @@ nav{
     height: 30px;
     background-color: rgb(255, 255, 255);
     z-index: 3;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .normal-nav{
@@ -80,7 +80,6 @@ li{
 
 .nav_icons{
     width:100%;
-    /* position: relative; */
     cursor: pointer;
     font-size: 1.5rem;
     z-index: 4;
@@ -90,19 +89,24 @@ li{
 .box{
     display: flex;
     flex-direction: row-reverse;
-    gap: 13em;
+    gap: 12em;
     padding-right: .5em;
     padding-top: .1em;
 }
 
-  .nav__toggle{
-  }
+  /* .nav__toggle{
+  } */
 
   .nav__close {
     font-size: 1.5rem;
     cursor: pointer;
     color: black;
     z-index: 5;
+  }
+
+  .mobileLogo{
+      font-weight: 900;
+      font-style: italic;
   }
 
   .nav__links{
@@ -157,6 +161,7 @@ li{
       border-color: none;
       transition: .3s;
       z-index: -1;
+      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     }
     .dropdown-lists ul{
         padding-top: 1.6rem; 
@@ -215,7 +220,6 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
@@ -249,13 +253,10 @@ li{
 /*============ MOMENTUM SEC ==========*/
 .yourOwnMomentum{
     margin: 0 auto;
-    padding: 0 1rem;
     background-color: rgba(0, 0, 0, 0.894);
     flex-direction: column;
-    /* border: 3px solid red; */
 }
 .image-container{
-    /* border: 3px solid red; */
     height: 30rem;
 }
 .momentumBox{
@@ -264,11 +265,9 @@ li{
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
-    /* border: 3px solid red; */
 }
 
 .momentumTextContain{
-    /* border: 3px solid red; */
     padding: 0 2em 0 2em;
     flex-direction: column;
     justify-content: space-evenly;
@@ -392,6 +391,9 @@ li{
 
   .stylist{
     font-weight: 500;
+    font-size: 3em;
+    text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
+    font-style: italic;
   }
 
   .one{
