@@ -17,9 +17,12 @@
 <body class="bg-fixed">
     <header>
         <nav class="navContainer flex sticky">
-        <div class="nav_icons hideHamburger flex">
-            <i class="nav__toggle uil uil-bars" id="nav-toggle"></i>
-            <i class="uil uil-times nav__close hide" id="nav-close"></i>
+        <div class="nav_icons hideHamburger">
+            <div class="box">
+                <i class="nav__toggle uil uil-bars" id="nav-toggle"></i>
+                <i class="uil uil-times nav__close hide" id="nav-close"></i>
+                <p>Logo</p>
+            </div>
         </div>
         <div class="dropdown-lists hideHamburger" id="nav-menu">
             <ul class="nav__links flex">
@@ -67,27 +70,29 @@
     </main>
     <!---============ IMPRESSED SEC ==========-->
     <section class="beImpressedByOur flex" id="services">
-        <section class="impressSection flex">
-            <i class="uil uil-graduation-cap impress-icon"></i>
-            <h4>Expert Beauticians</h4>
-            <p>Beauty Experts dolor sit omet semiodicing elit moecenas so fauibus mollis expo
-                sail and beauty extern interdurm elit moecenas so fauibus mollis expo
-                </p>
-        </section>
-
-        <section class="impressSection flex">
-            <i class="uil uil-award impress-icon"></i>
-            <h4>Quality Services</h4>
-            <p>Beauty Experts dolor sit omet semiodicing elit moecenas so fauibus mollis expo
-                sail and beauty extern interdurm elit moecenas so fauibus mollis expo</p>
-        </section>
-
-        <section class="impressSection flex">
-            <i class="uil uil-flask-potion impress-icon"></i>
-            <h4>Beauty Products</h4>
-            <p>Beauty Experts dolor sit omet semiodicing elit moecenas so fauibus mollis expo
-                sail and beauty extern interdurm elit moecenas so fauibus mollis expo</p>
-        </section>
+        <div class="impressContainer">
+            <section class="impressSection flex">
+                <i class="uil uil-graduation-cap impress-icon"></i>
+                <h4>Expert Beauticians</h4>
+                <p>Beauty Experts dolor sit omet semiodicing elit moecenas so fauibus mollis expo
+                    sail and beauty extern interdurm elit moecenas so fauibus mollis expo
+                    </p>
+            </section>
+    
+            <section class="impressSection flex">
+                <i class="uil uil-award impress-icon"></i>
+                <h4>Quality Services</h4>
+                <p>Beauty Experts dolor sit omet semiodicing elit moecenas so fauibus mollis expo
+                    sail and beauty extern interdurm elit moecenas so fauibus mollis expo</p>
+            </section>
+    
+            <section class="impressSection flex">
+                <i class="uil uil-flask-potion impress-icon"></i>
+                <h4>Beauty Products</h4>
+                <p>Beauty Experts dolor sit omet semiodicing elit moecenas so fauibus mollis expo
+                    sail and beauty extern interdurm elit moecenas so fauibus mollis expo</p>
+            </section>
+        </div>
     </section>
     <!---============ MOMENTUM SEC ==========-->
     <section class="yourOwnMomentum flex" id="about">
@@ -110,10 +115,18 @@
 
     <section class="theCrew flex" id="crew">
         <div class="cards">
-        <div class="card one"></div>
-        <div class="card two"></div>
-        <div class="card three"></div>
-        <div class="card four"></div>
+        <div class="card one">
+            <div class="overlay"></div>
+        </div>
+        <div class="card two">
+            <div class="overlay"></div>
+        </div>
+        <div class="card three">
+            <div class="overlay"></div>
+        </div>
+        <div class="card four">
+            <div class="overlay"></div>
+        </div>
         </div>
     </section>
 

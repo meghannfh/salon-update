@@ -13,6 +13,10 @@ body{
     background-attachment: fixed;
 }
 
+h1, h3, h4{
+
+}
+
 .nav-links li,
 .nav__links li,
 section p,
@@ -36,10 +40,10 @@ nav{
     top:0;
     z-index: 10;
 }
+
 .navContainer {
     width: 100vw;
     height: 30px;
-    /* padding: .25em; */
     background-color: rgb(255, 255, 255);
     z-index: 3;
 }
@@ -51,7 +55,9 @@ nav{
 }
 
 .nav-links{
-    width: 60%;
+    flex-direction: row;
+    width: 70%;
+    row-gap: 1em;
     justify-content: space-evenly;
 }
 .nav-links li a:hover{
@@ -73,61 +79,30 @@ li{
 }
 
 .nav_icons{
-    height: 100%;
     width:100%;
-    position: relative;
+    /* position: relative; */
     cursor: pointer;
     font-size: 1.5rem;
     z-index: 4;
     background-color: white;
 }
 
-
-@media screen and (max-width: 768px) {
-    .normal-nav{
-        display:none;
-    }
-    .dropdown-lists {
-      position: fixed;
-      top: -100%;
-      left: 0%;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.966);
-      border-radius: 0 0 .50em .50em;
-      border-color: none;
-      transition: .3s;
-      z-index: -1;
-    }
-    .dropdown-lists ul{
-        padding-top: 1.6rem; 
-    }
-    .dropdown-lists ul li{
-
-        letter-spacing: 1rem;
-    }
-  }
+.box{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 13em;
+    padding-right: .5em;
+    padding-top: .1em;
+}
 
   .nav__toggle{
-    position: absolute;
-    top: 0;
-    right: 1.5%;
   }
 
   .nav__close {
-    position: absolute;
-    top: 0;
-    right: 1.5%;
     font-size: 1.5rem;
     cursor: pointer;
     color: black;
     z-index: 5;
-  }
-  
-  .nav_toggle:hover,
-  .nav__close:hover,
-  .search:hover,
-  .shopping:hover {
-    color: rgb(15, 149, 156);
   }
 
   .nav__links{
@@ -137,6 +112,7 @@ li{
 
   .nav__link{
       display: flex;
+
   }
   .nav__links a{
     display: inline-block;
@@ -159,7 +135,37 @@ li{
     background-color: black;
     color: white;
   }
-  
+
+  .nav__toggle:hover,
+  .nav__close:hover,
+  .search:hover,
+  .shopping:hover {
+    color: rgb(15, 149, 156);
+  }
+  /* Nav Bar  Media Query */ 
+  @media screen and (max-width: 768px) {
+    .normal-nav{
+        display:none;
+    }
+    .dropdown-lists {
+      position: fixed;
+      top: -100%;
+      left: 0%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.966);
+      border-radius: 0 0 .50em .50em;
+      border-color: none;
+      transition: .3s;
+      z-index: -1;
+    }
+    .dropdown-lists ul{
+        padding-top: 1.6rem; 
+    }
+    .dropdown-lists ul li{
+
+        letter-spacing: 1rem;
+    }
+  }
   /* show menu */
   .show-menu {
     top: 0;
@@ -168,6 +174,7 @@ li{
   .hide{
       display:none;
   }
+  
 /*================= MAIN ===================*/
 .mainContainer{
     padding: 2em 1em 2em 5em;
@@ -180,36 +187,31 @@ li{
     font-size: 10em;
 }
 
-/* .black-arrow-btns{
-    padding: 1.5rem 2rem;
-    background-color: teal;
-    color:white;
-} */
-
-/* .black-arrow-btns:hover{
-    cursor: pointer;
-    color: black;
-    background-color: white;
-} */
-
 /*============ IMPRESSED SEC ==========*/
 .beImpressedByOur{
     margin: 15em auto;
     gap: 1em;
     padding: 2rem 1rem;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
+.impressContainer{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .impressSection{
-    width: 300px;
-    height:300px;
+    height:20em;
     border-radius: .2em;
     background-color: white;
     padding: 0 1.5em;
     color: black;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.5em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -218,7 +220,7 @@ li{
 }
 
 .impress-icon{
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: .7em;
 }
 
@@ -226,25 +228,22 @@ li{
     text-transform: uppercase;
     margin-bottom: .5em;
 }
-@media screen and (max-width: 768px){
-    .impressSection{
-        width: 50vw;
-        height:60vw;
-    }
-    .beImpressedByOur{
-        flex-direction: column;
+@media screen and (max-width: 760px){
+    .impressContainer{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
     }
 
+    .impressSection h4{
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 650px){
-    .impressSection{
-        width: 55vw;
-        height:65vw;
-    }
-    .beImpressedByOur{
-        flex-direction: column;
-    }
+    
 
 }
 /*============ MOMENTUM SEC ==========*/
@@ -306,7 +305,7 @@ li{
     height:100%;
     object-fit: cover;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 760px){
     .momentumBox{
         grid-template-columns: repeat(1, 1fr);
     }
