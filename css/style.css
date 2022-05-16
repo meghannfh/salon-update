@@ -423,7 +423,7 @@ li{
 .lookbook{
     background-color: rgba(255, 255, 255, 0.784);
     margin: 15em 20em;
-    padding: 5em 0;
+    padding: 5em 2em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -473,7 +473,6 @@ li{
     width: 250px;
     height:300px;
 }
-
 
 img {
     object-fit: cover;
@@ -556,6 +555,11 @@ div.insideDiv::after{
         grid-template-columns: repeat(1, 1fr);
       }
   }
+/*=============== FOOTER ============*/
+.footerContainer{
+    background-color: black;
+}
+
 /*=============== MEDIA QUERIES ============*/
 @media screen and (max-width: 768px) {
     /*=================== NAV ===============*/
