@@ -190,6 +190,8 @@ li{
     color:white;
     font-weight: 100;
     font-size: 10em;
+    line-height: 1.2em;
+    margin-bottom: .5em;
 }
 
 /*============ IMPRESSED SEC ==========*/
@@ -422,7 +424,7 @@ li{
 /*============ LookBOOK SEC ==========*/
 .lookbook{
     background-color: rgba(255, 255, 255, 0.784);
-    margin: 15em 20em;
+    margin: 15em 5em;
     padding: 5em 2em;
     display: flex;
     justify-content: center;
@@ -499,7 +501,7 @@ img {
 
 .wrapper {
     display: grid;
-    max-width: 50em;
+    max-width: 80vw;
     position: relative;
     width: auto;
     gap: 1em;
@@ -573,12 +575,52 @@ div.insideDiv::after{
     .hideHamburger{
         display:block;
     }
+    .box{
+        gap: 12em;
+    }
     /*=================== MAIN =============*/
     .main-title{
-        font-size: 5em;
+        font-size: 7em;
     }
     
     /*============ MOMENTUM SEC ==========*/
+    .momentumTextContain p{
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .mainContainer{
+        margin:5em 0;
+        padding: 1em 0em 1em 3em;
+    }
+
+    .main-title{
+        font-size: 5em;
+    }
+
+    .box{
+        gap: 5.8em;
+    }
+    .momentumTextContain p{
+        line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .mainContainer{
+        margin:5em 0;
+        padding: 1em 0em 1em 2em;
+    }
+
+    .main-title{
+        font-size: 5em;
+    }
+
+    .box{
+        gap: 5em;
+    }
+
 }
 
 /* CSS */
