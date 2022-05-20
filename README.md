@@ -30,7 +30,3 @@ with CSS grid.
 ![App Screenshot](media/ScreenShot3.png)
 
 
-## Demo
-
-![App Demo](media/ApreGif.gif)
-
