@@ -23,7 +23,7 @@ Moving forward, I'd like to plan future freelance projects made entirely
 with CSS grid.
 ## Screenshots
 
-![App Screenshot](media/Screenshot1.png)
+![App Screenshot](media/screenshotApare.png)
 
 
 
