@@ -25,8 +25,5 @@ with CSS grid.
 
 ![App Screenshot](media/Screenshot1.png)
 
-![App Screenshot](media/Screenshot2.png)
-
-![App Screenshot](media/ScreenShot3.png)
 
 

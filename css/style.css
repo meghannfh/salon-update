@@ -185,7 +185,7 @@ li{
 /*================= MAIN ===================*/
 .mainContainer{
     padding: 2em 1em 2em 5em;
-    margin: 5em 0 15em 0;
+    margin: 5em 0 20em 0;
 }
 .main-title{
     text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
@@ -198,7 +198,7 @@ li{
 
 /*============ IMPRESSED SEC ==========*/
 .beImpressedByOur{
-    margin: 15em auto;
+    margin: 20em auto;
     gap: 1em;
     padding: 2rem 1rem;
     justify-content: center;
@@ -250,13 +250,9 @@ li{
     }
 }
 
-@media screen and (max-width: 650px){
-    
-
-}
 /*============ MOMENTUM SEC ==========*/
 .yourOwnMomentum{
-    margin: 0 auto;
+    margin: 0 0 10em 0;
     background-color: rgba(0, 0, 0, 0.894);
     flex-direction: column;
 }
@@ -308,23 +304,11 @@ li{
     height:100%;
     object-fit: cover;
 }
-@media screen and (max-width: 760px){
-    .momentumBox{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .momentumTextContain{
-        height: 25rem;
-    }
-    .section-titles{
-        font-size: 2em;
-    }
-
-}
 
 /*============ CREW SEC ==========*/
 .theCrew {
-    margin: 0 auto;
-    padding: 10em 1rem 16em 1em;
+    margin: 25em 0 0 0;
+    padding: 3em 1rem 10em 1em;
     background-color:white;
     flex-direction: column;
     justify-content: center;
@@ -337,9 +321,9 @@ li{
     text-align: center;
     text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
     color:black;
-    font-weight: 100;
+    font-weight: 700;
     font-size: 6em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 .cards {
@@ -425,9 +409,9 @@ li{
 
 /*============ LookBOOK SEC ==========*/
 .lookbook{
-    background-color: rgba(255, 255, 255, 0.784);
-    margin: 15em 5em;
-    padding: 5em 2em;
+    background-color: white;
+    margin: 25em 0 15em 0;
+    padding: 3em 2em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -439,9 +423,9 @@ li{
     text-align: center;
     text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
     color:black;
-    font-weight: 100;
-    font-size: 6em;
-    margin-bottom: 1em;
+    font-weight: 700;
+    font-size: 8em;
+    margin-bottom: .5em;
 }
 
 .long{
@@ -517,8 +501,8 @@ div.insideDiv::after{
     flex-wrap: wrap;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.894);
-    margin: 5em auto;
-    padding: 2rem 1rem;
+    margin: 20em 0 0 0;
+    padding: 3rem 1rem;
     color: white;
     display: flex;
     justify-content: center;
@@ -529,35 +513,45 @@ div.insideDiv::after{
     text-align: center;
     text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
     color:white;
-    font-weight: 100;
-    font-size: 6em;
+    font-weight: 700;
+    font-size: 7em;
     margin-bottom: 1em;
 }
 
 .contact{
-    width: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.contact__inputs * {
+.contact__form{
+    width: auto;
+}
+
+.contact__content{
+    width: 50vw;
+    overflow: hidden;
+}
+
+.contact__inputs{
     display: flex;
-    justify-content: flex-end;
-    gap: 2em;
+    justify-content: center;
     border-radius: .2em;
 }
 
 .contact__label{
     text-transform: uppercase;
     letter-spacing: .2em;
-    width: 40%;
+    width: auto;
 }
 
 input{
-    height: 30px;
+    height: 40px;
     outline: none;
 }
 
 .contact__input{
-    width: 60%;
+    width: 100%;
 }
 
 .contactBtnContain{
@@ -604,6 +598,17 @@ input{
         line-height: 1.5em;
     }
 
+    .momentumBox{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .momentumTextContain{
+        height: 25rem;
+    }
+
+    .section-titles{
+        font-size: 2em;
+    }
     /*============ LOOKBOOK SEC ==========*/
     .wrapper {
         display: grid;
