@@ -57,6 +57,7 @@ nav{
 }
 
 .normal-nav{
+    padding: 0 .5rem;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -64,9 +65,9 @@ nav{
 }
 
 .nav-links{
+    flex-grow: 1;
     flex-direction: row;
     /* width: 70%; */
-    gap: 1em;
     justify-content: space-evenly;
 }
 .nav-links li a:hover{
@@ -399,25 +400,25 @@ li{
   }
 
   .one{
-      background-image: url(/salon-update/media/haridresser1.jpeg);
+      background-image: url(/media/haridresser1.jpeg);
       background-repeat: no-repeat;
       background-size:cover;
   }
 
   .two{
-      background-image: url(/salon-update/media/hairdresser3.jpeg);
+      background-image: url(/media/hairdresser3.jpeg);
       background-repeat: no-repeat;
       background-size:cover;
   }
 
   .three{
-      background-image: url(/salon-update/media/hairdresser4.jpeg);
+      background-image: url(/media/hairdresser4.jpeg);
       background-repeat: no-repeat;
       background-size:cover;
   }
 
   .four{
-    background-image: url(/salon-update/media/hairdresser5.jpeg);
+    background-image: url(/media/hairdresser5.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
   }
