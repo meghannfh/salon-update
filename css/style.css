@@ -6,7 +6,7 @@ a {
     color: black;
 }
 body{
-    background-image: url('/media/top.jpeg');
+    background-image: url('../media/top.jpeg');
     background-position: 40%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,6 +15,12 @@ body{
 
 h1, h3, h4, .stylist, .mobileLogo{
     font-family: 'Cormorant', serif;
+}
+
+.mobileLogo{
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.7rem;
 }
 
 .nav-links li,
@@ -59,8 +65,8 @@ nav{
 
 .nav-links{
     flex-direction: row;
-    width: 70%;
-    row-gap: 1em;
+    /* width: 70%; */
+    gap: 1em;
     justify-content: space-evenly;
 }
 .nav-links li a:hover{
@@ -96,7 +102,8 @@ li{
     display: flex;
     flex-direction: row-reverse;
     gap: 12em;
-    padding-right: .5em;
+    padding: 0 .5em;
+    justify-content: space-between;
 }
 
   /* .nav__toggle{
@@ -107,11 +114,6 @@ li{
     cursor: pointer;
     color: black;
     z-index: 5;
-  }
-
-  .mobileLogo{
-      font-weight: 900;
-      font-style: italic;
   }
 
   .nav__links{
@@ -138,11 +140,12 @@ li{
 
 
   .nav-button{
-      padding: 0 .25em;
+      padding: 1rem .75em;
+      transition: all .3s;
   }
 
   .nav-button:hover{
-    background-color: black;
+    background-color: rgb(15, 149, 156);
     color: white;
   }
 
@@ -189,9 +192,8 @@ li{
   
 /*================= MAIN ===================*/
 .mainContainer{
-    padding: 7em 1em 2em 5em;
-    margin: 0 auto;
-    height: 100vh;
+    padding: 7em 1em 10em 5em;
+    /* height: 100vh; */
 }
 .main-title{
     text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
@@ -208,7 +210,7 @@ li{
     background-color: white;
     margin: 0 auto;
     gap: 1em;
-    padding: 7rem 1rem 5rem 1rem;
+    padding: 7rem 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -225,6 +227,7 @@ li{
     height:20em;
     border-radius: .2em;
     background-color: white;
+    border: .3px solid rgba(155, 155, 155, 0.574);
     padding: 0 1.5em;
     color: black;
     text-align: center;
@@ -262,8 +265,8 @@ li{
 .yourOwnMomentum{
     height: auto;
     margin: 0 auto;
-    padding: 5em 0;
-    background-color: white;
+    padding: 7rem 0;
+    background-color: rgb(255, 255, 255);
     justify-content: center;
     flex-direction: column;
 }
@@ -320,7 +323,7 @@ li{
 /*============ CREW SEC ==========*/
 .theCrew {
     margin: 0 auto;
-    padding: 5em 1rem 10em 1em;
+    padding: 7rem 1rem;
     background-color:white;
     flex-direction: column;
     justify-content: center;
@@ -334,7 +337,7 @@ li{
     text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
     color:black;
     font-weight: 700;
-    font-size: 6em;
+    font-size: 8em;
     margin-bottom: .5em;
 }
 
@@ -396,25 +399,25 @@ li{
   }
 
   .one{
-      background-image: url(/media/haridresser1.jpeg);
+      background-image: url(/salon-update/media/haridresser1.jpeg);
       background-repeat: no-repeat;
       background-size:cover;
   }
 
   .two{
-      background-image: url(/media/hairdresser3.jpeg);
+      background-image: url(/salon-update/media/hairdresser3.jpeg);
       background-repeat: no-repeat;
       background-size:cover;
   }
 
   .three{
-      background-image: url(/media/hairdresser4.jpeg);
+      background-image: url(/salon-update/media/hairdresser4.jpeg);
       background-repeat: no-repeat;
       background-size:cover;
   }
 
   .four{
-    background-image: url(/media/hairdresser5.jpeg);
+    background-image: url(/salon-update/media/hairdresser5.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
   }
@@ -423,7 +426,7 @@ li{
 .lookbook{
     background-color: white;
     margin: 0 auto;
-    padding: 5em 2em;
+    padding: 7rem 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -513,8 +516,7 @@ div.insideDiv::after{
     flex-wrap: wrap;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.894);
-    margin: 20em 0 0 0;
-    padding: 5rem 1rem;
+    padding: 7rem 1rem;
     color: white;
     display: flex;
     justify-content: center;
@@ -577,10 +579,53 @@ input{
   }
 
 /*=============== FOOTER ============*/
-.footerContainer{
+.footerBtm{
+    padding: 2rem 5rem;
     background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
+.footerNav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    line-height: 30px;
+}
+
+.footerNav a{
+    color: white;
+}
+
+.footerNav a:hover{
+    color: rgb(15, 149, 156);
+    fill: rgb(15, 149, 156);
+}
+
+.footerNav span{
+    font-size: .75rem;
+    font-weight: 100;
+}
+
+.footerTopContainer{
+    padding: 1rem;
+    text-align: center;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.footerLogo{
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.copyright{
+    font-weight: 100;
+    font-size: .9rem;
+}
 
 
 
@@ -596,9 +641,6 @@ input{
     }
     .hideHamburger{
         display:block;
-    }
-    .box{
-        gap: 13.2em;
     }
     /*=================== MAIN =============*/
     .main-title{
@@ -655,13 +697,15 @@ input{
     .grid{
         grid-template-columns: repeat(1, 1fr);
       }
+    .contact__content{
+        width: 90vw;
+    }
 }
 
 @media screen and (max-width: 425px){
     .mainContainer{
         margin:5em 0;
         padding: 5em 0em 1em 3em;
-        height: 50vh;
     }
 
     .main-title{
