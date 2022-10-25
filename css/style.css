@@ -591,7 +591,8 @@ input{
 
 .footerNav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5px;
     flex-wrap: wrap;
     line-height: 30px;
 }
@@ -713,6 +714,10 @@ input{
         font-size: 5em;
     }
 
+    .mobileLogo{
+        font-size: 1.2rem;
+    }
+
     .box{
         gap: 5.8em;
     }
@@ -773,13 +778,20 @@ input{
     }
 
     .main-title{
-        font-size: 5em;
+        font-size: 4em;
+        margin-bottom: 7rem;
     }
 
     .box{
         gap: 5em;
     }
 
+}
+
+@media screen and (max-width: 320px){
+    .lookbookTitle{
+        font-size: 4.3rem;
+    }
 }
 
 /* CSS */
@@ -830,4 +842,10 @@ input{
   .button-59 {
     min-width: 200px;
   }
+}
+
+@media screen and (max-width: 320px){
+    .button-59{
+        margin-bottom: 3rem;
+    }
 }
