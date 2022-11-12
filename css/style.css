@@ -194,7 +194,7 @@ li{
 /*================= MAIN ===================*/
 .mainContainer{
     padding: 7em 1em 10em 5em;
-    /* height: 100vh; */
+    height: 100vh;
 }
 .main-title{
     text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
@@ -211,7 +211,7 @@ li{
     background-color: white;
     margin: 0 auto;
     gap: 1em;
-    padding: 7rem 1rem;
+    padding: 7rem 1rem 3.75rem 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -225,16 +225,14 @@ li{
 }
 
 .impressSection{
-    height:20em;
     border-radius: .2em;
     background-color: white;
     border: .3px solid rgba(155, 155, 155, 0.574);
-    padding: 0 1.5em;
+    padding: 1rem 1.5rem;
     color: black;
     text-align: center;
     line-height: 1.5em;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
@@ -266,8 +264,8 @@ li{
 .yourOwnMomentum{
     height: auto;
     margin: 0 auto;
-    padding: 7rem 0;
-    background-color: rgb(255, 255, 255);
+    padding-top: 3.75rem;
+    background-color: black;
     justify-content: center;
     flex-direction: column;
 }
@@ -275,7 +273,6 @@ li{
     height: 30rem;
 }
 .momentumBox{
-    background-color: black;
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -385,6 +382,7 @@ li{
       justify-content: center;
       align-items: center;
       transition: .5s ease;
+      display: none;
   }
 
   .card:hover .overlay {
@@ -397,6 +395,23 @@ li{
     font-size: 3em;
     text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
     font-style: italic;
+  }
+
+  .stylist__mobile{
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size: 1.7rem;
+  }
+
+  .stylist__mobile h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
   }
 
   .one{
@@ -632,6 +647,16 @@ input{
 
 
 /*=============== MEDIA QUERIES ============*/
+@media screen and (min-width: 1024px){
+    .stylist__mobile{
+        display:none;
+    }
+
+    .overlay{
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 768px) {
     /*=================== NAV ===============*/
     .navContainer{
@@ -730,7 +755,8 @@ input{
         padding: 5em 1em;
     }
 
-    .lookbookTitle{
+    .lookbookTitle,
+    .ourcrew{
         font-size: 5em;
     }
 
@@ -774,7 +800,7 @@ input{
 @media screen and (max-width: 375px){
     .mainContainer{
         margin:5em 0;
-        padding: 1em 0em 1em 2em;
+        padding: 4em 0em 1em 2em;
     }
 
     .main-title{
@@ -789,7 +815,9 @@ input{
 }
 
 @media screen and (max-width: 320px){
-    .lookbookTitle{
+    .lookbookTitle,
+    .ourcrew,
+    .contactTitle{
         font-size: 4.3rem;
     }
 }
