@@ -264,7 +264,8 @@ li{
 .yourOwnMomentum{
     height: auto;
     margin: 0 auto;
-    padding-top: 3.75rem;
+    background-color: white;
+    padding-top: 2.7rem;
     justify-content: center;
     flex-direction: column;
 }
@@ -379,6 +380,7 @@ li{
       height:0;
       background-color: #1b202871;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       transition: .5s ease;
@@ -404,8 +406,9 @@ li{
     width: 100%;
     padding: 1rem 0;
     text-align: center;
-    font-family: 'Cormorant', serif;
-    font-size: 1.7rem;
+    font-weight: 500;
+    font-size: 3em;
+    text-shadow: 0px 2px 2px rgba(14, 12, 12, 0.4);
   }
 
   .stylist__mobile h4 {
@@ -413,32 +416,35 @@ li{
   }
 
   .stylist__mobile h3 {
-    font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .one{
       background-image: url(/media/haridresser1.jpeg);
       background-repeat: no-repeat;
+      background-position: top center;
       background-size:cover;
   }
 
   .two{
       background-image: url(/media/hairdresser3.jpeg);
       background-repeat: no-repeat;
+      background-position: top center;
       background-size:cover;
   }
 
   .three{
       background-image: url(/media/hairdresser4.jpeg);
       background-repeat: no-repeat;
+      background-position: top center;
       background-size:cover;
   }
 
   .four{
     background-image: url(/media/hairdresser5.jpeg);
     background-repeat: no-repeat;
+    background-position: top center;
     background-size:cover;
   }
 
