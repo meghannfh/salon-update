@@ -6,7 +6,7 @@ a {
     color: black;
 }
 body{
-    background-image: url('../media/top.jpeg');
+    background-image: url('../media/header.jpeg');
     background-position: 40%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@ nav{
 
 .navContainer {
     width: 100vw;
-    height: 60px;
+    padding: .5rem 0;
     background-color: rgb(255, 255, 255);
     z-index: 3;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
@@ -211,7 +211,7 @@ li{
     background-color: white;
     margin: 0 auto;
     gap: 1em;
-    padding: 7rem 1rem 3.75rem 1rem;
+    padding: 3.75rem 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -265,7 +265,6 @@ li{
     height: auto;
     margin: 0 auto;
     padding-top: 3.75rem;
-    background-color: black;
     justify-content: center;
     flex-direction: column;
 }
@@ -275,6 +274,7 @@ li{
 .momentumBox{
     width: 100%;
     margin: 0 auto;
+    background-color: black;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -406,6 +406,10 @@ li{
     text-align: center;
     font-family: 'Cormorant', serif;
     font-size: 1.7rem;
+  }
+
+  .stylist__mobile h4 {
+    font-style: italic;
   }
 
   .stylist__mobile h3 {
@@ -648,6 +652,15 @@ input{
 
 /*=============== MEDIA QUERIES ============*/
 @media screen and (min-width: 1024px){
+    .beImpressedByOur{
+        height: 100vh;
+        padding: 0 1rem;
+    }
+    .yourOwnMomentum{
+        padding-top: 3.75rem;
+        background-color: white;
+    }
+
     .stylist__mobile{
         display:none;
     }
