@@ -178,7 +178,6 @@ li{
         padding-top: 1.6rem; 
     }
     .dropdown-lists ul li{
-
         letter-spacing: 1rem;
     }
   }
@@ -227,14 +226,12 @@ li{
 .impressSection{
     border-radius: .2em;
     background-color: white;
-    border: .3px solid rgba(155, 155, 155, 0.574);
     padding: 1rem 1.5rem;
     color: black;
     text-align: center;
     line-height: 1.5em;
     flex-direction: column;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .impress-icon{
@@ -421,7 +418,7 @@ li{
   }
 
   .one{
-      background-image: url(/media/haridresser1.jpeg);
+      background-image: url(/media/hairdresser1.jpeg);
       background-repeat: no-repeat;
       background-position: top center;
       background-size:cover;
@@ -661,6 +658,7 @@ input{
     .impressContainer{
         gap: 2em;
     }
+    
     .yourOwnMomentum{
         padding-top: 3.75rem;
         background-color: white;
