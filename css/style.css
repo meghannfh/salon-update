@@ -50,18 +50,27 @@ nav{
 
 .navContainer {
     width: 100vw;
-    padding: .5rem 0;
     background-color: rgb(255, 255, 255);
     z-index: 3;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .normal-nav{
-    padding: 0 .5rem;
-    justify-content: space-evenly;
+    /* padding: 0 .5rem; */
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100%;
+    padding: .3rem .3rem;
+}
+
+.nav-button{
+    padding: .3rem .25rem;
+    transition: all .3s;
+}
+
+.nav-button:hover{
+  background-color: rgb(15, 149, 156);
+  color: white;
 }
 
 .nav-links{
@@ -102,7 +111,7 @@ li{
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
-    gap: 12em;
+    /* gap: 12em; */
     padding: 0 .5em;
     justify-content: space-between;
 }
@@ -139,17 +148,6 @@ li{
       color:white;
   }
 
-
-  .nav-button{
-      padding: 1rem .75em;
-      transition: all .3s;
-  }
-
-  .nav-button:hover{
-    background-color: rgb(15, 149, 156);
-    color: white;
-  }
-
   .nav__toggle:hover,
   .nav__close:hover,
   .search:hover,
@@ -173,6 +171,7 @@ li{
       z-index: -1;
       box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
       padding-top: 2em;
+      overflow: hidden;
     }
     .dropdown-lists ul{
         padding-top: 1.6rem; 
@@ -346,7 +345,7 @@ li{
     grid-template-columns: repeat(4, 1fr);
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 1024px){
     .cards{
         grid-template-columns: repeat(2, 1fr);
     }
